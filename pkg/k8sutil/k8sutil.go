@@ -122,6 +122,7 @@ func IsResourceNotFoundError(err error) bool {
 	if se.Status().Code == http.StatusNotFound && se.Status().Reason == metav1.StatusReasonNotFound {
 		return true
 	}
+	fmt.Println("just a test")
 	return false
 }
 
